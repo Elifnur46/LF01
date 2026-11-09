@@ -9,8 +9,18 @@ import java.io.InputStreamReader;
 public class QuadratischeGleichung2 {
     public static void main(String[] args) throws IOException {
 
+
+        System.out.print("Gebe für p ein: ");
+        double p = IO.readDouble();
+
+
+        System.out.print("Gebe für q ein: ");
+        double q = IO.readDouble();
+
         //Berechnung der Diskriminante.
         double d = Math.pow(p / 2,2) - q;
+
+
 
         //Berechnung der Lösungen.
         if (d < 0){
@@ -24,6 +34,6 @@ public class QuadratischeGleichung2 {
             //Ausgabe der Lösung.
             System.out.println("Eine Nullstelle bei x = " + ergebnis1);
             System.out.println("Eine Nullstelle bei x = " + ergebnis2);
-        }string
+        }
     }
 }

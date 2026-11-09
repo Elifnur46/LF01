@@ -1,24 +1,25 @@
 package Schleifen;
 
+import oop.IO;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class QuadraticheGleichung3 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Wert von a: ");
-        double a = Double.parseDouble(br.readLine());
+        double a = IO.readDouble();
 
         System.out.println("Wert von b: ");
-        double b = Double.parseDouble(br.readLine());
+        double b = IO.readDouble();
 
         System.out.println("Wert von c: ");
-        double c = Double.parseDouble(br.readLine());
+        double c = IO.readDouble();
 
         //Berechnung der Diskriminante
-        double d = Math.pow(b, 2) - 4 * a * c;
+        double d = (Math.pow(b, 2)) - (4 * a * c);
 
         //Berechnung der Lösungen
         if (d < 0) {
